@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { TodoItem } from '../interfaces/todo-item';
 
 @Component({
   selector: 'app-todo-item',
@@ -8,7 +9,10 @@ import { Component, Input } from '@angular/core';
   `,
   styleUrls: ['./todo-item.component.scss']
 })
-export class TodoItemComponent {
-@Input() item: any; 
+export class TodoItemComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  @Input() item: any; //TODO: change this to TodoItem object instead later.
 
 }
