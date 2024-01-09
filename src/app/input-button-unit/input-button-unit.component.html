@@ -1,5 +1,5 @@
-<input #inputElementRef [value]="title" (keyup.enter)="submitValue(getInputValue($event))">
+<input #inputElementRef [value]="title" class="todo-input" (keyup.enter)="submitValue(getInputValue($event))">
 
-<button (click)="submitValue(inputElementRef.value)">
+<button class="btn" (click)="submitValue(inputElementRef.value)">
     Save
 </button>
